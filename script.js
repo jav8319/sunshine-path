@@ -144,6 +144,7 @@ function q1() {
             event.preventDefault();
 
             // document.getElementById("#aa").disabled;
+            document.getElementById("aa").disabled=true;
             document.getElementById("bb").disabled=true;
             document.getElementById("cc").disabled=true;
             document.getElementById("dd").disabled=true;
@@ -159,6 +160,7 @@ function q1() {
 
             event.preventDefault();
             document.getElementById("aa").disabled=true;
+            document.getElementById("bb").disabled=true;
             document.getElementById("cc").disabled=true;
             document.getElementById("dd").disabled=true;
 
@@ -174,8 +176,9 @@ function q1() {
 
     butc.addEventListener("click", function(event) {
             event.preventDefault();
-            document.getElementById("bb").disabled=true;
             document.getElementById("aa").disabled=true;
+            document.getElementById("bb").disabled=true;
+            document.getElementById("cc").disabled=true;
             document.getElementById("dd").disabled=true;
 
             good=good+1;
@@ -190,9 +193,10 @@ function q1() {
 
     butd.addEventListener("click", function(event) {
             event.preventDefault();
+            document.getElementById("aa").disabled=true;
             document.getElementById("bb").disabled=true;
             document.getElementById("cc").disabled=true;
-            document.getElementById("aa").disabled=true;
+            document.getElementById("dd").disabled=true;
 
             wrong=wrong+1;
             info01.textContent="wrong";
@@ -251,6 +255,7 @@ function q2() {
         event.preventDefault();
                 
                 // document.getElementById("#aa").disabled;
+        document.getElementById("ee").disabled=true;
         document.getElementById("ff").disabled=true;
         document.getElementById("gg").disabled=true;
         document.getElementById("hh").disabled=true;
@@ -266,9 +271,10 @@ function q2() {
         event.preventDefault();
                 
                 // document.getElementById("#aa").disabled;
-        document.getElementById("ee").disabled=true;
-        document.getElementById("gg").disabled=true;
-        document.getElementById("hh").disabled=true;
+                document.getElementById("ee").disabled=true;
+                document.getElementById("ff").disabled=true;
+                document.getElementById("gg").disabled=true;
+                document.getElementById("hh").disabled=true;
             
         wrong=wrong+1;
         info02.textContent="wrong";
@@ -282,9 +288,10 @@ function q2() {
         event.preventDefault();
                 
                 // document.getElementById("#aa").disabled;
-        document.getElementById("ff").disabled=true;
-        document.getElementById("ee").disabled=true;
-        document.getElementById("hh").disabled=true;
+                document.getElementById("ee").disabled=true;
+                document.getElementById("ff").disabled=true;
+                document.getElementById("gg").disabled=true;
+                document.getElementById("hh").disabled=true;
             
         good=good+1;
         info02.textContent="good";
@@ -298,9 +305,10 @@ function q2() {
         event.preventDefault();
                 
             // document.getElementById("#aa").disabled;
-        document.getElementById("ff").disabled=true;
-        document.getElementById("gg").disabled=true;
-        document.getElementById("ee").disabled=true;
+            document.getElementById("ee").disabled=true;
+            document.getElementById("ff").disabled=true;
+            document.getElementById("gg").disabled=true;
+            document.getElementById("hh").disabled=true;
         
         wrong=wrong+1;
         info02.textContent="wrong";
@@ -362,6 +370,7 @@ function q3() {
        document.getElementById("jj").disabled=true;
        document.getElementById("kk").disabled=true;
        document.getElementById("ll").disabled=true;
+       document.getElementById("ii").disabled=true;
     
        good=good+1;
        info03.textContent="good";
@@ -376,9 +385,10 @@ function q3() {
         event.preventDefault();
         
         // document.getElementById("#aa").disabled;
-        document.getElementById("ii").disabled=true;
+        document.getElementById("jj").disabled=true;
         document.getElementById("kk").disabled=true;
         document.getElementById("ll").disabled=true;
+        document.getElementById("ii").disabled=true;
     
         wrong=wrong+1;
         info03.textContent="wrong";
@@ -394,8 +404,9 @@ function q3() {
         
         // document.getElementById("#aa").disabled;
         document.getElementById("jj").disabled=true;
-        document.getElementById("ii").disabled=true;
+        document.getElementById("kk").disabled=true;
         document.getElementById("ll").disabled=true;
+        document.getElementById("ii").disabled=true;
 
         wrong=wrong+1;
         info03.textContent="wrong";
@@ -411,9 +422,10 @@ function q3() {
         event.preventDefault();
         
         // document.getElementById("#aa").disabled;
-       document.getElementById("jj").disabled=true;
-       document.getElementById("kk").disabled=true;
-       document.getElementById("ii").disabled=true;
+        document.getElementById("jj").disabled=true;
+        document.getElementById("kk").disabled=true;
+        document.getElementById("ll").disabled=true;
+        document.getElementById("ii").disabled=true;
 
        wrong=wrong+1;
        info03.textContent="wrong";
@@ -471,6 +483,7 @@ function q4() {
         event.preventDefault();
         
         // document.getElementById("#aa").disabled;
+       document.getElementById("mm").disabled=true;
        document.getElementById("nn").disabled=true;
        document.getElementById("oo").disabled=true;
        document.getElementById("pp").disabled=true;
@@ -489,6 +502,7 @@ function q4() {
         
         // document.getElementById("#aa").disabled;
         document.getElementById("mm").disabled=true;
+        document.getElementById("nn").disabled=true;
         document.getElementById("oo").disabled=true;
         document.getElementById("pp").disabled=true;
      
@@ -505,8 +519,9 @@ function q4() {
         event.preventDefault();
         
         // document.getElementById("#aa").disabled;
-        document.getElementById("nn").disabled=true;
         document.getElementById("mm").disabled=true;
+        document.getElementById("nn").disabled=true;
+        document.getElementById("oo").disabled=true;
         document.getElementById("pp").disabled=true;
      
      
@@ -523,9 +538,10 @@ function q4() {
         event.preventDefault();
         
         // document.getElementById("#aa").disabled;
+        document.getElementById("mm").disabled=true;
         document.getElementById("nn").disabled=true;
         document.getElementById("oo").disabled=true;
-        document.getElementById("mm").disabled=true;
+        document.getElementById("pp").disabled=true;
      
      
         wrong=wrong+1;
@@ -586,6 +602,7 @@ function q5() {
        document.getElementById("rr").disabled=true;
        document.getElementById("ss").disabled=true;
        document.getElementById("tt").disabled=true;
+       document.getElementById("qq").disabled=true;
     
        wrong=wrong+1;
        info05.textContent="wrong";
@@ -600,9 +617,10 @@ function q5() {
         event.preventDefault();
         
         // document.getElementById("#aa").disabled;
-        document.getElementById("qq").disabled=true;
+        document.getElementById("rr").disabled=true;
         document.getElementById("ss").disabled=true;
         document.getElementById("tt").disabled=true;
+        document.getElementById("qq").disabled=true;
      
         good=good+1;
         info05.textContent="good";
@@ -618,8 +636,9 @@ function q5() {
         
         // document.getElementById("#aa").disabled;
         document.getElementById("rr").disabled=true;
-        document.getElementById("qq").disabled=true;
+        document.getElementById("ss").disabled=true;
         document.getElementById("tt").disabled=true;
+        document.getElementById("qq").disabled=true;
      
         wrong=wrong+1;
         info05.textContent="wrong";
@@ -636,6 +655,7 @@ function q5() {
         // document.getElementById("#aa").disabled;
         document.getElementById("rr").disabled=true;
         document.getElementById("ss").disabled=true;
+        document.getElementById("tt").disabled=true;
         document.getElementById("qq").disabled=true;
      
         wrong=wrong+1;
