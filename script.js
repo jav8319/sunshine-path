@@ -1,50 +1,4 @@
-function finalscore(){
 
-     
-    secvis0.setAttribute("class","hidden");
-    secvis1.setAttribute("class","hidden");
-    secvis2.setAttribute("class","hidden");
-    secvis3.setAttribute("class","hidden");
-    secvis4.setAttribute("class","hidden");
-    secvis5.setAttribute("class","hidden");
-    secvis6.setAttribute("class","visible");
-
-    
-
-    if ((counter-(wrong*10)-((5-answcount)*10))<0) {
-            localRe=0;
-    } else {
-        localRe=(counter-(wrong*10)-((5-answcount)*10))
-    }
-
-    scoretext.textContent = localRe;
-
-    submit0.addEventListener("click", function (event) {
-
-
-        event.preventDefault();
-
-
-
-        var name=iniInput.value;
-        var gg="your last score";
-        var score=gg.concat(localRe);
-
-        localStorage.setItem(name,score);
-            
-       
-
-        window.alert("thanks for submission");
-
-        init();
-
-
-    })
-
-
-
-
-}
 
 var secvis0 = document.getElementById("pag1")
 var secvis1 = document.getElementById("pag2");
@@ -90,7 +44,21 @@ var submit0=document.querySelector("#submit");
 var scoretext = document.getElementById("scoretext");
 
 var localRe=0;
-var hscore=parseFloat(localStorage.getItem("highestscore"));
+
+var user=localStorage.getItem("user")
+var hscoreholder=localStorage.getItem("holder")
+
+if (user===null) {
+    localStorage.setItem("user",0);
+};
+
+if (hscoreholder===null) {
+    localStorage.setItem("holder",' no one');
+};
+
+
+scorerecord.textContent=user;
+
 
 
 var counter=75;
@@ -692,7 +660,58 @@ function countdown5() {
       }
     }, 1000);
 }
+
+function finalscore(){
+
+     
+    secvis0.setAttribute("class","hidden");
+    secvis1.setAttribute("class","hidden");
+    secvis2.setAttribute("class","hidden");
+    secvis3.setAttribute("class","hidden");
+    secvis4.setAttribute("class","hidden");
+    secvis5.setAttribute("class","hidden");
+    secvis6.setAttribute("class","visible");
+
+    
+
+    if ((counter-(wrong*10)-((5-answcount)*10))<0) {
+            localRe=0;
+    } else {
+        localRe=(counter-(wrong*10)-((5-answcount)*10))
+    }
+
+    scoretext.textContent = localRe;
+
+ 
+    submit0.addEventListener("click", function (event) {
+
+        
+
+        event.preventDefault();
+        init();
+        var name1=iniInput.value;
+        
+        if (user<localRe) {
+            localStorage.setItem("user",localRe);
             
+            localStorage.setItem("holder",name1);
+            window.alert("you have highest score");
+        } else {
+            
+            window.alert("highest score is held by_"+hscoreholder+"("+user+")");
+        };
+        
+        
+
+        
+
+    })
+
+
+
+
+
+};
 
 
   
