@@ -1,8 +1,16 @@
 section{
     position: absolute;
     margin-top: 70px;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
+    justify-content: center;
    
 
+}
+
+button{
+    background-color: blueviolet;
 }
 
 
@@ -15,3 +23,7 @@ section{
     display: block;
 }
 
+footer{
+    display: flex;
+    justify-content: space-between;
+}
