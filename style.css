@@ -23,7 +23,7 @@ button{
     display: block;
 }
 
-footer{
+header{
     display: flex;
     justify-content: space-between;
 }
