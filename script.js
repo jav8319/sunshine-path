@@ -1,5 +1,3 @@
-
-
 var secvis0 = document.getElementById("pag1")
 var secvis1 = document.getElementById("pag2");
 var secvis2 = document.getElementById("pag3");
@@ -7,7 +5,6 @@ var secvis3 = document.getElementById("pag4");
 var secvis4 = document.getElementById("pag5");
 var secvis5 = document.getElementById("pag6");
 var secvis6 = document.getElementById("final");
-
 
 var info01=document.getElementById("info1");
 var info02=document.getElementById("info2");
@@ -56,10 +53,7 @@ if (hscoreholder===null) {
     localStorage.setItem("holder",' no one');
 };
 
-
 scorerecord.textContent=user;
-
-
 
 var counter=75;
 var counter1=2;
@@ -67,8 +61,6 @@ var wrong=0;
 var good=0;
 var answcount=0;
 var answer="";
-
-
 
 init();
 
@@ -97,9 +89,7 @@ but0.addEventListener("click", function() {
 });
 
 function q1() {
-    // Sets interval in variable
-
-
+   
     secvis0.setAttribute("class","hidden");
     secvis1.setAttribute("class","visible");
     secvis2.setAttribute("class","hidden");
@@ -110,8 +100,7 @@ function q1() {
 
     buta.addEventListener("click", function(event) {
             event.preventDefault();
-
-            // document.getElementById("#aa").disabled;
+            
             document.getElementById("aa").disabled=true;
             document.getElementById("bb").disabled=true;
             document.getElementById("cc").disabled=true;
@@ -154,8 +143,6 @@ function q1() {
             answer=1;
 
             answcount=wrong+good;
-
-
     })
 
 
@@ -171,8 +158,6 @@ function q1() {
             answer=1;
 
             answcount=wrong+good;
-
-
     })
 
     var timerInterval = setInterval(function() {
@@ -208,9 +193,7 @@ function countdown() {
 }
 
 function q2() {
-    // Sets interval in variable
-
-
+   
     secvis0.setAttribute("class","hidden");
     secvis1.setAttribute("class","hidden");
     secvis2.setAttribute("class","visible");
@@ -222,7 +205,6 @@ function q2() {
     bute.addEventListener("click", function(event) {
         event.preventDefault();
                 
-                // document.getElementById("#aa").disabled;
         document.getElementById("ee").disabled=true;
         document.getElementById("ff").disabled=true;
         document.getElementById("gg").disabled=true;
@@ -238,11 +220,11 @@ function q2() {
     butf.addEventListener("click", function(event) {
         event.preventDefault();
                 
-                // document.getElementById("#aa").disabled;
-                document.getElementById("ee").disabled=true;
-                document.getElementById("ff").disabled=true;
-                document.getElementById("gg").disabled=true;
-                document.getElementById("hh").disabled=true;
+                
+        document.getElementById("ee").disabled=true;
+        document.getElementById("ff").disabled=true;
+        document.getElementById("gg").disabled=true;
+        document.getElementById("hh").disabled=true;
             
         wrong=wrong+1;
         info02.textContent="wrong";
@@ -255,11 +237,10 @@ function q2() {
     butg.addEventListener("click", function(event) {
         event.preventDefault();
                 
-                // document.getElementById("#aa").disabled;
-                document.getElementById("ee").disabled=true;
-                document.getElementById("ff").disabled=true;
-                document.getElementById("gg").disabled=true;
-                document.getElementById("hh").disabled=true;
+        document.getElementById("ee").disabled=true;
+        document.getElementById("ff").disabled=true;
+        document.getElementById("gg").disabled=true;
+        document.getElementById("hh").disabled=true;
             
         good=good+1;
         info02.textContent="good";
@@ -272,11 +253,10 @@ function q2() {
     buth.addEventListener("click", function(event) {
         event.preventDefault();
                 
-            // document.getElementById("#aa").disabled;
-            document.getElementById("ee").disabled=true;
-            document.getElementById("ff").disabled=true;
-            document.getElementById("gg").disabled=true;
-            document.getElementById("hh").disabled=true;
+        document.getElementById("ee").disabled=true;
+        document.getElementById("ff").disabled=true;
+        document.getElementById("gg").disabled=true;
+        document.getElementById("hh").disabled=true;
         
         wrong=wrong+1;
         info02.textContent="wrong";
@@ -319,10 +299,7 @@ function countdown2() {
 }
 
 function q3() {
-    // Sets interval in variable
-
-
-
+ 
     secvis0.setAttribute("class","hidden");
     secvis1.setAttribute("class","hidden");
     secvis2.setAttribute("class","hidden");
@@ -333,8 +310,7 @@ function q3() {
 
     buti.addEventListener("click", function(event) {
         event.preventDefault();
-        
-        // document.getElementById("#aa").disabled;
+  
        document.getElementById("jj").disabled=true;
        document.getElementById("kk").disabled=true;
        document.getElementById("ll").disabled=true;
@@ -345,8 +321,7 @@ function q3() {
        answer=1;
     
        answcount=wrong+good;
-   
-    
+       
     });
     
     butj.addEventListener("click", function(event) {
@@ -363,7 +338,6 @@ function q3() {
         answer=1;
      
         answcount=wrong+good;
-
     
     });
     
@@ -381,15 +355,12 @@ function q3() {
         answer=1;
      
         answcount=wrong+good;
-
-
     
     });
     
     butl.addEventListener("click", function(event) {
         event.preventDefault();
-        
-        // document.getElementById("#aa").disabled;
+ 
         document.getElementById("jj").disabled=true;
         document.getElementById("kk").disabled=true;
         document.getElementById("ll").disabled=true;
@@ -400,8 +371,6 @@ function q3() {
        answer=1;
     
        answcount=wrong+good;
-
-    
     });
 
     var timerInterval4 = setInterval(function() {
@@ -420,7 +389,6 @@ function q3() {
 function countdown3() {
     counter1 = 2;
   
-    // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
     var timeInterval5 = setInterval(function () {
         counter1--;
       if ((counter===0)&&(counter1===0)) {
@@ -449,8 +417,7 @@ function q4() {
 
     butm.addEventListener("click", function(event) {
         event.preventDefault();
-        
-        // document.getElementById("#aa").disabled;
+   
        document.getElementById("mm").disabled=true;
        document.getElementById("nn").disabled=true;
        document.getElementById("oo").disabled=true;
@@ -460,9 +427,7 @@ function q4() {
        info04.textContent="good";
        answer=1;
     
-       answcount=wrong+good;
-     
-    
+       answcount=wrong+good;        
     });
     
     butn.addEventListener("click", function(event) {
@@ -478,28 +443,22 @@ function q4() {
         info04.textContent="wrong";
         answer=1;
      
-        answcount=wrong+good;
-
-    
+        answcount=wrong+good;    
     });
     
     buto.addEventListener("click", function(event) {
         event.preventDefault();
-        
-        // document.getElementById("#aa").disabled;
+
         document.getElementById("mm").disabled=true;
         document.getElementById("nn").disabled=true;
         document.getElementById("oo").disabled=true;
         document.getElementById("pp").disabled=true;
-     
-     
+          
         wrong=wrong+1;
         info04.textContent="wrong";
         answer=1;
      
-        answcount=wrong+good;
-
-    
+        answcount=wrong+good;    
     });
     
     butp.addEventListener("click", function(event) {
@@ -509,15 +468,13 @@ function q4() {
         document.getElementById("mm").disabled=true;
         document.getElementById("nn").disabled=true;
         document.getElementById("oo").disabled=true;
-        document.getElementById("pp").disabled=true;
-     
+        document.getElementById("pp").disabled=true;     
      
         wrong=wrong+1;
         info04.textContent="wrong";
         answer=1;
      
         answcount=wrong+good;
-
     });
     
 
@@ -537,7 +494,7 @@ function q4() {
 function countdown4() {
     counter1 = 2;
   
-    // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
+   
     var timeInterval7 = setInterval(function () {
         counter1--;
       if ((counter===0)&&(counter1===0)) {
@@ -688,33 +645,24 @@ function finalscore(){
         
 
         event.preventDefault();
-        init();
+        
         var name1=iniInput.value;
         
+            
         if (user<localRe) {
             localStorage.setItem("user",localRe);
             
             localStorage.setItem("holder",name1);
             window.alert("you have highest score");
+            location.reload();
+           
         } else {
             
             window.alert("highest score is held by_"+hscoreholder+"("+user+")");
-        };
-        
-        
-
-        
+            location.reload();
+            
+        }; 
+               
 
     })
-
-
-
-
-
 };
-
-
-  
-
-
-  
