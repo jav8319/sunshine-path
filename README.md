@@ -9,7 +9,7 @@
 
 ## Description  
 
-The index.html contains a javascript test which has to be completed before the time limit. The code to set up the timer is called "interval function" which is very useful to count time.  
+The file index.html contains a javascript test which has to be completed before the time limit. The code to set up the timer is called "interval function" which is very useful to count time.  
 
 ## Usage  
 
