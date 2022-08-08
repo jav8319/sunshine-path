@@ -13,7 +13,7 @@ The index.html contains a javascript test which has to be completed before the t
 
 ## Usage  
 
-Go to jjjjjjjjjjjjjjjjjj, then start the quiz. once quiz is completed a prompt will confirm who has the hieghst score and the initial page will be loaded.  
+Go to https://jav8319.github.io/sunshine-path/, then start the quiz. once quiz is completed a prompt will confirm who has the hieghst score and the initial page will be loaded.  
 
 ## Questions  
 
