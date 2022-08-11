@@ -4,6 +4,7 @@ section{
     margin-left: 30%;
     margin-right: 30%;
     align-items: center;
+    height: 100hv;
     justify-content: center;
    
 
@@ -27,3 +28,11 @@ header{
     display: flex;
     justify-content: space-between;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+       text-align: center;
+  }
